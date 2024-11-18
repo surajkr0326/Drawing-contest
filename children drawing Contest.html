@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Children's Drawing Contest</title>
+</head>
+<body>
+   <form action="practice.html" method="post">
+    <h1>Children's Drawing Contest</h1>
+    <label for="name">1) Name</label>
+    <input type="text" name="name" id="name" placeholder="Enter your name.." required><br><br>
+
+    <label for="dob">2) DOB</label>
+    <input type="date" name="dob" id="dob" required><br><br>
+
+    <label for="email">3) Enter e-mail address (Guardian/Parents)</label><br><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <select name="email_provider" id="email_provider">
+        <option value="@gmail.com">@gmail.com</option>
+        <option value="@yahoo.com">@yahoo.com</option>
+        <option value="@outlook.com">@outlook.com</option>
+    </select><br><br>
+
+    <label for="drawing">4) Upload Drawing</label>
+    <input type="file" name="drawing" id="drawing" accept="image/*" required><br><br>
+
+    <!-- Choose Category -->
+    <label for="category">5) Choose Category</label>
+    <select name="category" id="category" required>
+        <option value="" disabled selected>Select any one..</option>
+        <option value="animal">Animal</option>
+        <option value="plant">Plant</option>
+        <option value="flower">Flower</option>
+        <option value="solar_system">Solar System</option>
+    </select><br><br>
+
+    <!-- Additional Comments or Feedback -->
+    <label for="comments">Additional Comments or Feedback:</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+    <!-- Parent/Guardian's Name -->
+    <label for="parent_name">Parent/Guardian's Name:</label>
+    <input type="text" id="parent_name" name="parent_name" required><br><br>
+
+    <!-- Agreement Checkbox -->
+    <label>
+        <input type="checkbox" name="agreement" required>
+        I agree to the contest rules and policies.
+    </label><br><br>
+
+    <!-- Consent Checkbox -->
+    <label>
+        <input type="checkbox" name="consent">
+        I consent to use my child's drawing in promotions or social media.
+        <a href="t&c">Term & condition apply</a>
+    </label><br><br>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit Entry</button><br><br>
+
+    <!-- Reset Button -->
+    <button type="reset">Reset</button>
+   </form>
+</body>
+</html>
